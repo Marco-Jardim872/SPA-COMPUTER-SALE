@@ -1,0 +1,399 @@
+/*General*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: 18px;
+font-family: "Helvetica Neue", sans-serif;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav{background: #000}
+
+.nav a{
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.nav a:hover {
+  background: #666;
+}
+.address{
+  text-align: center;
+}
+.address img{
+  vertical-align: middle;
+}
+
+/*Small Smartphones*/
+@media screen and (max-width: 480px){
+  .header{
+    display: flex;
+    flex-direction: column;
+    box-shadow:0 2px 10px #999999;
+    margin-bottom: 15px;
+    background: #efefef;
+  }
+  .nav{
+    display: none;
+    flex-direction: column;
+    order:2;
+  }
+  .nav a {
+    width: 100%;
+  }
+  .buttonMob{
+    order: 1;
+    text-align: right;
+    padding: 7px 5% 7px 0;
+  }
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 5%;
+   
+  }
+  .address{
+    order: 3;
+    padding: 10px 5%; 
+    line-height: 30px; 
+   }
+  
+  .address strong{
+    font-size: 27px;
+  }
+  .image-gallery{
+    float: left;
+    width:90%;
+    margin: 0 5%;
+  }
+  .information{
+    float: left;
+    width: 90%;
+    margin: 20px 5%;
+  }
+  .information li{
+    list-style: none;
+    line-height:35px;
+    padding-left: 20px;
+    background: url("./iconTick.png") no-repeat left center;
+   
+  }
+  .information li p{
+    margin-left: 15px;
+  }
+  .mapsLoja{
+    width: 100%;
+    margin: 35px 0;
+  }
+  .mapsLoja iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  .footer{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    background: #000000;
+    padding: 15px 5%;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  .footer div:nth-child(2){
+    text-align: center;
+    color:#fff;
+  }
+}
+
+/*Medium Smartphones*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .header{
+    margin-bottom: 15px;
+    display: flex;
+    box-shadow:0 2px 10px #999999;
+    flex-direction: column;
+    background: #efefef;
+  }
+  .nav{
+    display: none;
+    flex-direction: column;
+   
+  }
+  .nav a {
+
+    width: 100%;
+  }
+  .buttonMob{
+    order: 1;
+    text-align: right;
+    padding: 5px 5% 5px 0;
+  }
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 5%;
+   
+  }
+  .address{
+    order: 3;
+    padding: 10px 5%; 
+    line-height: 30px; 
+  }
+  
+  .address strong{
+    font-size: 27px;
+  }
+  .image-gallery{
+    float: left;
+    width:80%;
+    margin: 0 10%;
+  }
+  .information{
+    float: left;
+    width: 80%;
+    margin: 20px 10%;
+  }
+  .information li{
+    list-style: none;
+    line-height:35px;
+    padding-left: 20px;
+    background: url("./iconTick.png") no-repeat left center;
+   
+  }
+  .information li p{
+    margin-left: 15px;
+  }
+  .mapsLoja{
+    width: 100%;
+    margin: 35px 0;
+  }
+  .mapsLoja iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  .footer{
+    display:flex;
+    width: 100%;
+    background: #000000;
+    padding: 15px 5%;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  .footer div:nth-child(1){
+    flex-grow: 1;
+    text-align: center;
+  }
+  .footer div:nth-child(2){
+    flex-grow: 8;
+    text-align: center;
+    color:#fff;
+  }
+
+}
+
+/*Large Smartphones and small notebooks*/
+@media screen and (min-width: 769px) and (max-width: 1199px){
+  .header{
+    float: left;
+    width: 100%;
+    box-shadow:0 2px 10px #999999;
+    margin-bottom: 25px;
+    background: #efefef;
+  }
+  .nav{
+    display: flex;
+   
+  }
+  .nav a {
+    width: 100%;
+  }
+  .buttonMob{
+    display: none;
+  }
+  .logo{
+    float:left; 
+    width: 30%; 
+    padding: 15px 0 15px 10%;
+  }
+  .address{
+    float:left; 
+    width: 70%; 
+    padding: 20px 5% 10px 20%; 
+    line-height: 35px; 
+  }
+ 
+  .address strong{
+    font-size: 27px;}
+  .image-gallery{
+    float: left;
+    width:42%;
+    margin: 0 4%;
+  }
+  .information{
+    float: left;
+    width: 50%;
+  }
+  .information li{
+    list-style: none;
+    line-height:35px;
+    padding-left: 20px;
+    background: url("./iconTick.png") no-repeat left center;
+   
+  }
+  .information li p{
+    margin-left: 15px;
+  }
+  .mapsLoja{
+    width: 100%;
+    margin: 35px 0;
+  }
+  .mapsLoja iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  .footer{
+    display:flex;
+    width: 100%;
+    background: #000000;
+    padding: 15px 5%;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  .footer div:nth-child(1){
+    flex-grow: 1;
+    text-align: center;
+  }
+  .footer div:nth-child(2){
+    flex-grow: 8;
+    text-align: center;
+    color:#fff;
+  }
+  
+
+}
+
+/*Larges screens*/
+@media screen and (min-width: 1200px){
+  .header{
+    float: left;
+    width: 100%;
+    box-shadow:0 2px 10px #999999;
+    margin-bottom: 25px;
+    background: #efefef;
+  }
+  .nav{
+    display: flex;
+  }
+  .nav a{
+    width: 25%;
+  }
+  .buttonMob{
+    display: none;
+  }
+  .logo{
+    float:left; 
+    width: 30%; 
+    padding: 15px 0 15px 10%;
+  }
+  .address{
+    float:left; 
+    width: 70%; 
+    padding: 20px 5% 10px 20%; 
+    line-height: 35px; 
+  }
+ 
+  .address strong{
+    font-size: 27px;}
+
+  .image-gallery{
+    float: left;
+    width:40%;
+    margin: 0 7%;
+  }
+  .information{
+    float: left;
+    width: 45%;
+  }
+  .information li{
+    list-style: none;
+    line-height:35px;
+    padding-left: 20px;
+    background: url("./iconTick.png") no-repeat left center;
+   
+  }
+  .information li p{
+    margin-left: 15px;
+  }
+  .mapsLoja{
+    width: 100%;
+    margin: 35px 0;
+  }
+  .mapsLoja iframe{
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+  .footer{
+    display:flex;
+    width: 100%;
+    background: #000000;
+    padding: 15px 5%;
+    font-weight: bold;
+    line-height: 35px;
+  }
+  .footer div:nth-child(1){
+    flex-grow: 1;
+    text-align: center;
+  }
+  .footer div:nth-child(2){
+    flex-grow: 8;
+    text-align: center;
+    color:#fff;
+  }
+  .formulario{
+    display:flex;
+    width: 50%;
+    margin: 20px 25%;
+    flex-direction: column;
+  }
+  .formulario h1{
+    color:#000;
+    text-align: center;
+    font-size:30px;
+  }
+  .formulario input{
+    margin: 6px 0;
+    height: 40px;
+    color: #333;
+  }
+  .formulario input[type="text"],
+  .formulario input[type="tel"],
+  .formulario input[type="email"]{
+    width: 100%;
+    padding: 0 5px;
+  }
+  .formulario input[type="submit"]{
+    background: #000;
+    cursor: pointer;
+    color:#fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+  }
+  .formulario textarea{
+    width: 100%;
+    height: 150px;
+    color: #333;
+    padding: 5px;
+  }
+}
